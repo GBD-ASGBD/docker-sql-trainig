@@ -1,6 +1,6 @@
 # Comandes a executar al terminal
 Cal tenir Docker instal·lat a l'ordinador, pots veure la documentació sobre com instal·lar-lo en diferents plataformes al següent enllaç
-[https://docs.docker.com/get-started/get-docker/]
+[https://docs.docker.com/get-started/get-docker/](Docker)
 Dins la carpeta del projecte cal executar les Comandes
 ## Per crear la imatge
 `docker build -t postgres-training .`
