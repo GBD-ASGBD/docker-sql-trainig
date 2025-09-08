@@ -2,6 +2,8 @@
 Cal tenir Docker instal·lat a l'ordinador, pots veure la documentació sobre com instal·lar-lo en diferents plataformes al següent enllaç
 [https://docs.docker.com/get-started/get-docker/](Docker)
 
+Primer has de descarregar el projecte, ja sigui descarregant el codi directament amb el botó verd de la part superior dreta o si saps com funciona git pots crear un clon del repositori al teu ordinador.
+
 Dins la carpeta del projecte cal executar les següents comandes
 ## Per crear la imatge
 `docker build -t postgres-training .`
