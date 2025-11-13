@@ -15,3 +15,23 @@ Dins la carpeta del projecte cal executar les següents comandes
 
 ## Per aturar el contenidor
 `docker stop training-db`
+
+# Importar un fitxer sql des de l'editor de comandes de postgres
+
+Per poder importar un fityxer sql des de l'editor de comandes de postgres cal que aquest fitxer estigui accessible pel propi editor.
+## Fer el fitxer sql accessible des del contenidor
+El primer que cal fer és copiar el fitxer sql a importar a les carpetes accessibles pel Docker, per fer-ho cal anar a la carpeta on tens el fitxer sql des del terminal del teu ordinador i escriure
+
+`docker cp .\nom_fitxer_sql.sql training-db:/tmp/nom_fitxer_sql.sql`
+
+on `nom_fitxer_sql.sql` ha de ser el nom real que li hagis posat al teu fitxer
+
+## Importar el fitxer
+
+Un cop tinguis el fitxer a la carpeta de docker entra al terminal de postgres amb la comanda que ja hem utilitzat
+
+`docker exec -it training-db psql -U isard -d training`
+
+i finalment, des de dins del terminal de postgres escriu
+
+`\i /tmp/nom_fitxer_sql.sql`
