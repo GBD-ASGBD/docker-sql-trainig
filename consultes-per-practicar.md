@@ -1,4 +1,21 @@
 # Consultes SQL per practicar
+A continuació trobaràs un llistat amb enunciats per crear consultes SQL i la seva possible solució que et poden servir per practicar.
+
+Tingues en compte que l'esquema d'una consulta SQL és el següent:
+```
+SELECT[ALL | DISTINCT ] <nom_camp> [{,<nom_camp>}]
+    [,avg(nom_camp)] [,sum(nom_camp)] [,count(nom_camp)] //min, max...
+    [(SELECT subconsulta)]
+FROM     <nom_taula> [{,<nom_taula>}]
+    [{[INNER|{LEFT|RIGHT|FULL} OUTER] JOIN  <nom_taula> ON <nom_camp>}]
+[WHERE <condicion> [{ AND|OR <condició>}]
+    [(SELECT subconsulta)]]
+[GROUP BY <nom_camp> [{,<nom_camp>}]]
+[HAVING <condició>[{ AND|OR <condició>}]]
+[ORDER BY <nom_camp> [ASC | DESC]
+    [{,<nom_camp> [ASC | DESC ]}]]
+LIMIT x
+```
 
 ## 1. Consultes Simples (SELECT, WHERE, ORDER BY)
 1. Llista tots els productes del fabricant 'aci'.
